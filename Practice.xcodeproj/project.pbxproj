@@ -15,6 +15,7 @@
 		A177A19B23BBC92500CC419A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A177A19923BBC92500CC419A /* LaunchScreen.storyboard */; };
 		A177A1A623BBC92600CC419A /* PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1A523BBC92600CC419A /* PracticeTests.swift */; };
 		A177A1B123BBC92600CC419A /* PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1B023BBC92600CC419A /* PracticeUITests.swift */; };
+		A177A1BF23C69CC600CC419A /* ProfileNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1BE23C69CC600CC419A /* ProfileNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A177A1AC23BBC92600CC419A /* PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A177A1B023BBC92600CC419A /* PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeUITests.swift; sourceTree = "<group>"; };
 		A177A1B223BBC92600CC419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A177A1BE23C69CC600CC419A /* ProfileNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A177A18E23BBC92400CC419A /* AppDelegate.swift */,
 				A177A19023BBC92400CC419A /* SceneDelegate.swift */,
 				A177A19223BBC92400CC419A /* ContentView.swift */,
+				A177A1BE23C69CC600CC419A /* ProfileNavView.swift */,
 				A177A19423BBC92500CC419A /* Assets.xcassets */,
 				A177A19923BBC92500CC419A /* LaunchScreen.storyboard */,
 				A177A19C23BBC92500CC419A /* Info.plist */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A177A1BF23C69CC600CC419A /* ProfileNavView.swift in Sources */,
 				A177A18F23BBC92400CC419A /* AppDelegate.swift in Sources */,
 				A177A19123BBC92400CC419A /* SceneDelegate.swift in Sources */,
 				A177A19323BBC92400CC419A /* ContentView.swift in Sources */,
