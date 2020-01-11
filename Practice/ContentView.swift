@@ -8,37 +8,40 @@
 
 import SwiftUI
 
+// This protocol deals with passing user-defined views to DraggableView.
+// User should Create a struct that conforms to this Protocol and
+
+
+
 struct ContentView: View {
 
     var body: some View {
-        DraggableView() {
-               [Text("Hidden"),
-               Text("Showed")]
-        }
+        DraggableView<ProfileNavView, Text>(myViews:((ProfileNavView(), Text("Showed"))))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .edgesIgnoringSafeArea(.all)
+        //.edgesIgnoringSafeArea(.all)
     }
-}
+    }
 
-struct DraggableView<Content: View>: View {
+
+struct DraggableView<T: View, W : View>: View {
     @State var currentOffset = -(UIScreen.main.bounds.width / 2)
     @State var isOpen = false
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
     let startOffset = -(UIScreen.main.bounds.width / 2)
     let endOffset = UIScreen.main.bounds.width / 2
-    var childView: () -> [Content]
+    let myViews : (T, W)
     
     var body: some View {
         HStack(spacing: CGFloat.zero){
                VStack{
-                childView()[0]
+                    self.myViews.0
                }
                .frame(width: self.width, height: self.height)
                .background(Color.blue)
             
                VStack{
-                childView()[1]
+                    self.myViews.1
                }
                .frame(width: self.width, height: self.height)
         }

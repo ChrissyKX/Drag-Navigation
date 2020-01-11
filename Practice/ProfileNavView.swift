@@ -34,14 +34,18 @@ struct Header: View {
                 .frame(width: self.width, height: self.height)
                 .clipShape(Rectangle().scale(x: 1, y: 1/3, anchor: .top))
             VStack {
-                Button(action: {
-                    //
-                }) {
-                    Image(systemName: "multiply")
-                        .scaleEffect(1.5)
-                }.foregroundColor(.white)
-                    .frame
-
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        //
+                    }) {
+                        Image(systemName: "multiply")
+                            .scaleEffect(1.5)
+                    }.foregroundColor(.white)
+                        .padding(.trailing, self.width / 15)
+                }
+                
+                Spacer()
                 
                  HStack {
                     Image("ProfilePic")
@@ -62,11 +66,13 @@ struct Header: View {
                             Text("My Signature")
                         }
                     }
+                    
+                    Spacer()
                 }
-                .frame(width: self.width, alignment: .leading)
-    //            .padding(.leading, CGFloat(50))
-                .offset(x: (self.width / 15), y: -(self.height / 4))
             }
+            .frame(height: self.height / 4)
+            .padding(self.width / 15)
+            .offset(y: -(self.height / 3))
         }
         
     }
