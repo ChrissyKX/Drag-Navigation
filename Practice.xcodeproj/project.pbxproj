@@ -16,6 +16,7 @@
 		A177A1A623BBC92600CC419A /* PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1A523BBC92600CC419A /* PracticeTests.swift */; };
 		A177A1B123BBC92600CC419A /* PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1B023BBC92600CC419A /* PracticeUITests.swift */; };
 		A177A1BF23C69CC600CC419A /* ProfileNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1BE23C69CC600CC419A /* ProfileNavView.swift */; };
+		A177A1C123C94DBB00CC419A /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177A1C023C94DBB00CC419A /* DraggableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A177A1B023BBC92600CC419A /* PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeUITests.swift; sourceTree = "<group>"; };
 		A177A1B223BBC92600CC419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A177A1BE23C69CC600CC419A /* ProfileNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavView.swift; sourceTree = "<group>"; };
+		A177A1C023C94DBB00CC419A /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				A177A18E23BBC92400CC419A /* AppDelegate.swift */,
 				A177A19023BBC92400CC419A /* SceneDelegate.swift */,
 				A177A19223BBC92400CC419A /* ContentView.swift */,
+				A177A1C023C94DBB00CC419A /* DraggableView.swift */,
 				A177A1BE23C69CC600CC419A /* ProfileNavView.swift */,
 				A177A19423BBC92500CC419A /* Assets.xcassets */,
 				A177A19923BBC92500CC419A /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				A177A1BF23C69CC600CC419A /* ProfileNavView.swift in Sources */,
 				A177A18F23BBC92400CC419A /* AppDelegate.swift in Sources */,
 				A177A19123BBC92400CC419A /* SceneDelegate.swift in Sources */,
+				A177A1C123C94DBB00CC419A /* DraggableView.swift in Sources */,
 				A177A19323BBC92400CC419A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

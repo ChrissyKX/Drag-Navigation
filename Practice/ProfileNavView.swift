@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct ProfileNavView: View {
+    let turnToPage: (Int) -> ()
+    
     var body: some View {
         ZStack {
-            Header()
-               .frame(maxWidth: .infinity, maxHeight: .infinity)
-               .edgesIgnoringSafeArea(.all)
+            Header(turnToPage: turnToPage)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .edgesIgnoringSafeArea(.all)
                 .background(Color.red)
-                
+            
             VStack {
                 Text("Nav")
             }
@@ -24,6 +26,7 @@ struct ProfileNavView: View {
 }
 
 struct Header: View {
+    let turnToPage: (Int) -> ()
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
     
@@ -33,19 +36,17 @@ struct Header: View {
                 .resizable()
                 .frame(width: self.width, height: self.height)
                 .clipShape(Rectangle().scale(x: 1, y: 1/3, anchor: .top))
-            VStack {
+            VStack(spacing: self.height / 7) {
                 HStack {
                     Spacer()
                     Button(action: {
-                        //
+                        self.turnToPage(1)
                     }) {
                         Image(systemName: "multiply")
                             .scaleEffect(1.5)
                     }.foregroundColor(.white)
                         .padding(.trailing, self.width / 15)
                 }
-                
-                Spacer()
                 
                  HStack {
                     Image("ProfilePic")
@@ -72,15 +73,15 @@ struct Header: View {
             }
             .frame(height: self.height / 4)
             .padding(self.width / 15)
-            .offset(y: -(self.height / 3))
+            .offset(y: -(self.height / 3.2))
         }
         
     }
 }
 
-struct ProfileNavView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileNavView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone XR"))
-    }
-}
+//struct ProfileNavView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileNavView(currentPage: Binding<CurrentPage>($CurrentPage(0)))
+//            .previewDevice(PreviewDevice(rawValue: "iPhone XR"))
+//    }
+//}
